@@ -40,7 +40,7 @@ public class Day1Part2 {
                 }
                 
                 if (ones == -1) { ones = tens; }
-                System.out.println((10*tens + ones));
+                // System.out.println((10*tens + ones));
                 sum += 10 * tens + ones;
             }
             
