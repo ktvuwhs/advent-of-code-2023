@@ -31,7 +31,7 @@ public class Day1Part2 {
                 // m.start() gives index of the match
                 // +1 so that we can successfully find "one" inside of something like "twone"
                 // The +1 will find in the String "wone", to allow us to actually find the "one"
-                while (!m.hitEnd() && m.find(m.start()+1)) {
+                while (m.find(m.start()+1)) {
                     if (m.group().length() > 1) {
                         ones = Arrays.asList(digits).indexOf(m.group());
                     } else {
@@ -50,6 +50,5 @@ public class Day1Part2 {
             System.out.println("File not found");
             e.printStackTrace();
         }
-        
     }
 }

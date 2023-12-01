@@ -20,7 +20,7 @@ public class Day1 {
                 m = p.matcher(sc.nextLine());
                 if (m.find()) { tens = Integer.parseInt(m.group()); }
                 
-                while (!m.hitEnd() && m.find()) {
+                while (m.find()) {
                     ones = Integer.parseInt(m.group());
                 }
                 
@@ -35,6 +35,5 @@ public class Day1 {
             System.out.println("File not found");
             e.printStackTrace();
         }
-        
     }
 }
