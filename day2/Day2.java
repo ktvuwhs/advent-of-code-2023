@@ -68,5 +68,7 @@ public class Day2
         }
         System.out.println(sumGameID);
         System.out.println(sumPower);
+
+        sc.close();
     }
 }
