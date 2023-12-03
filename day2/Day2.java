@@ -56,9 +56,9 @@ public class Day2
                 if (!(validRed || validGreen || validBlue)) { validGame = false; }
                 
                 // Part 2 - Getting minimum cubes that can play the game
-                if (color.equals("red")   && amtCube > maxRed)   { maxRed = amtCube; }
+                if (color.equals("red")   && amtCube > maxRed)   { maxRed   = amtCube; }
                 if (color.equals("green") && amtCube > maxGreen) { maxGreen = amtCube; }
-                if (color.equals("blue")  && amtCube > maxBlue)  { maxBlue = amtCube; }
+                if (color.equals("blue")  && amtCube > maxBlue)  { maxBlue  = amtCube; }
             }
 
             if (validGame) { sumGameID += gameID; }
